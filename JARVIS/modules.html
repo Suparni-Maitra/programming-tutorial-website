@@ -1,0 +1,141 @@
+<HTML>
+<TITLE>MODULES</TITLE>
+<HEAD>
+<style>
+a:link {
+  color: WHITE;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: WHITE;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: WHITE;
+  background-color: transparent;
+  text-decoration: underline;
+}
+html {
+  background: url(PRBG3.jpg) no-repeat center fixed;
+  background-size: cover;
+  opacity:0.9;
+}
+h1 {
+  color: BLACK;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h2{
+   color: WHITE;
+   text-shadow: 0 0 3px BLACK, 0 0 5px DARKBLUE;
+}
+h3 {
+  COLOR: RED;
+  text-shadow: 2px 2px BLACK;
+}
+body {
+  color: white;
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 130px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: maroon;
+  color: white;
+}
+
+.flip-box-back {
+  background-color: darkblue;
+  color: white;
+  transform: rotateX(180deg);
+}
+.button {
+  background-color: BLUE; /* Green */
+  border: 6px solid yellow;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  margin: 15px 200px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+</style>
+</head>
+<BODY>
+<CENTER><FONT SIZE="20" FACE="ARIAL BLACK"><H1>J.A.R.V.I.S</H1></FONT>
+<FONT SIZE="5" FACE="ARIAL BLACK"><H1>Just Another Rather Very Intelligent System</H1></FONT>
+<FONT SIZE="7" FACE="ARIAL BLACK"><H2>MODULES</H2></FONT>
+<TABLE>
+<TR>
+<TD><div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <H2><BR><FONT SIZE="10">C</FONT>
+    </div>
+    <div class="flip-box-back">
+      <h2><FONT SIZE="10"><A HREF="C_INTRO.HTML">LEARN MORE</A></FONT></h2>
+    </div>
+  </div>
+</div></TD>
+<TD><div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <H2><BR><FONT SIZE="20">C++</FONT></H2>
+    </div>
+    <div class="flip-box-back">
+      <h2><FONT SIZE="10"><A HREF="C++_INTRO.HTML">LEARN MORE</A></FONT></h2>
+    </div>
+  </div>
+</div></TD>
+<TD><div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+     <H2><BR><FONT SIZE="20">PYTHON</FONT></H2>
+    </div>
+    <div class="flip-box-back">
+      <h2><FONT SIZE="10"><A HREF="PYTHON_INTRO.HTML">LEARN MORE</A></FONT></h2>
+    </div>
+  </div>
+</div></TD>
+</TABLE>
+<h2><a href="PAYMENT.HTML"><button class="button button1">PURCHASE A PACKAGE</button></A></h2>
+<a href="phomepage.html">Back To Home</a>

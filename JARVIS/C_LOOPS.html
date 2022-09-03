@@ -1,0 +1,129 @@
+<HTML>
+<TITLE>JARVIS</TITLE>
+<HEAD>
+<style>
+a:link {
+  color: BLACK;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: BLACK;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: WHITE;
+  background-color: transparent;
+  text-decoration: underline;
+}
+html {
+  background: url(PRBG3.jpg) no-repeat center fixed;
+  background-size: cover;
+  opacity:0.9;
+}
+h1 {
+  color: blue;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h2 {
+  color: WHITE;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h3 {
+  COLOR: RED;
+  text-shadow: 2px 2px BLACK;
+}
+body {
+  color: BLACK;
+}
+.button {
+  background-color: maroon; /* Green */
+  border: 6px solid yellow;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 45px;
+  margin: 15px 200px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+.button2 {border-radius: 12px;}
+.button3 {border-radius: 12px;}
+</style>
+</head>
+<BODY BGCOLOR="GREENYELLOW">
+<FONT SIZE="5" FACE="TEMPUS SANS ITC"><H1><a id="F">C LOOPS</a></H1>
+<FONT SIZE="5"><B>The looping can be defined as repeating the same process multiple times until a specific condition satisfies.<BR>
+The looping simplifies the complex problems into the easy ones. It enables us to alter the flow of the program so that instead of writing the same code again and again, we
+can repeat the same code for a finite number of times.
+
+<BR>There are the following types of loops and other structures in C language.
+<UL><LI><a href="#DO-WHILE LOOP">Do-while loops</a></li>
+<li><a href="#WHILE LOOP">While Loops</a></li>
+<li><a href="#FOR LOOP">For loops</a></li>
+<li><a href="#NESTED LOOPS">Nested Loops</a></li>
+<li><a href="#INFINITE LOOP">Infinite loops</a></li>
+<li><a href="#C CONTINUE STATEMENT">C Continue Statement</a></li>
+<li><a href="#C BREAK STATEMENT">C Break Statement</a></li></ul>
+<br><br>
+
+<FONT SIZE="5"><H1><a id="DO-WHILE LOOP">DO-WHILE LOOP</a></H1>
+<FONT SIZE="5"><B>A do while loop is similar to while loop with one exception that it executes the statements inside the body of do-while before checking the condition.
+On the other hand in the while loop, first the condition is checked and then the statements in while loop are executed. So we can say that if a condition is false at the first place then the do while would run once, however the while loop would not run at all.<BR>
+<br>The following code demonstrates the syntax and use of the do-while loop:<br><br><center><IMG SRC="DOWHILE.PNG" WIDTH="600" HEIGHT="350"></center>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+<FONT SIZE="5"><H1><a id="WHILE LOOP">WHILE LOOP</a></H1>
+<FONT SIZE="5"><B>While loop is also known as a pre-tested loop. In general, a while loop allows a part of the code to be executed multiple times depending upon a given boolean condition. It can be viewed as a repeating if statement. The while loop is mostly used in the case where the number of iterations is not known in advance.
+<br>The following code demonstrates the syntax and use of the while loop:<br><br>
+<center><IMG SRC="WHILE.PNG" WIDTH="600" HEIGHT="350"></center>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+<FONT SIZE="5"><H1><a id="FOR LOOP">FOR LOOP</a></H1>
+<FONT SIZE="5"><B>A for loop is a repetition control structure that allows us to write a loop that is executed a specific number of times. The loop enables us to perform n number of steps together in one line.
+<br>The following code demonstrates the syntax and use of the for loop:<br><br>
+<center><IMG SRC="FORLOOP.JFIF"  WIDTH="500" HEIGHT="350"></center>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+<FONT SIZE="5"><H1><a id="NESTED LOOPS">NESTED LOOPS</a></H1>
+<FONT SIZE="5"><B>A loop inside a loop is called Nested Loop. There can be any number of loops inside a loop. We know there are generally many looping conditions like for, while, and do-while. We can loop different kinds of loops within each other to form nested loops.
+C language supports this functionality of Nested Loops.
+<br>The following code demonstrates the syntax and use of the nested loop:<br><br>
+<center><IMG SRC="NESTED.JFIF" WIDTH="500" HEIGHT="350"></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+<FONT SIZE="5"><H1><a id="INFINITE LOOP">INFINITE LOOPS</a></H1>
+<FONT SIZE="5"><B>A loop that repeats indefinitely and does not terminate is called an infinite loop. An infinite loop also called as endless loop or indefinite loop.
+An infinite loop is most of the time create by the mistake, but it does not mean that infinite loop is not require or not useful.
+Infinite loop can be use in an application where the application code is to be keep running for infinite until it is stopped example web server or where user input is to be accept and generate continuous output until user exits, operating system processes, games and so all.
+<BR><br>The following code demonstrates the syntax and use of the infinite loop:<br><br>
+<center><TABLE><TR><TD><IMG SRC="INFLOOP.JFIF" WIDTH="400" HEIGHT="300"></TD>
+<TD><IMG SRC="INFLOOP2.PNG" WIDTH="500" HEIGHT="300"></TD></TR></CENTER></TABLE>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+<p align="left"><FONT SIZE="8"><H1><a id="C CONTINUE STATEMENT">C CONTINUE STATEMENT</a></H1>
+<FONT SIZE="5"><B>This statement is majorly used in the case of iterators or in the case of looping. As the name already suggests, this statement makes sure that the code continues running after a particular statement is executed. It is used in the same way as the break statement,
+but the break statement would stop the execution of the loop or series of statements, but the continue statement in return would continue the execution of the code.
+<br>The following code demonstrates the syntax and use of the continue:</p><br><br>
+<center><IMG SRC="CONTINUE.JFIF" WIDTH="500" HEIGHT="350"></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+<FONT SIZE="5"><H1><a id="C BREAK STATEMENT">C BREAK STATEMENT</a></H1>
+<FONT SIZE="5"><B>Break Statement in C is a loop control statement that is used to terminate the loop.<br>
+In general the break statements we used in the situations where we need to stop the loop execution based on the condition or not sure how many times the loop is to be iterate. If the break statements using inside the nested loop, then the break statement breaks
+the inner loop and starts executing the statement after the inner loop of the program control continue to the outer loop.
+<br>The following code demonstrates the syntax and use of the break statement:<br><br>
+<center><IMG SRC="BREAK.JFIF" WIDTH="500" HEIGHT="350"></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>

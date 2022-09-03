@@ -1,0 +1,106 @@
+<HTML>
+<TITLE>JARVIS</TITLE>
+<HEAD>
+<style>
+a:link {
+  color: BLACK;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: BLACK;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: WHITE;
+  background-color: transparent;
+  text-decoration: underline;
+}
+html {
+  background: url(PRBG3.jpg) no-repeat center fixed;
+  background-size: cover;
+  opacity:0.9;
+}
+h1 {
+  color: blue;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h2 {
+  color: WHITE;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h3 {
+  COLOR: RED;
+  text-shadow: 2px 2px BLACK;
+}
+body {
+  color: BLACK;
+}
+.button {
+  background-color: maroon; /* Green */
+  border: 6px solid yellow;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 45px;
+  margin: 15px 200px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+.button2 {border-radius: 12px;}
+.button3 {border-radius: 12px;}
+</style>
+</head>
+<BODY BGCOLOR="GREENYELLOW"><FONT SIZE="5" FACE="TEMPUS SANS ITC">
+<H1><a id="F">C CONTROL STATEMENTS</a></H1>
+<FONT SIZE="5" FACE="TEMPUS SANS ITC"><H1>C IF-ELSE STATEMENT</H1>
+<FONT SIZE="5"><B>The if-else statement in C is used to perform the operations based on some specific condition.
+The operations specified in if block are executed if and only if the given condition is true.
+
+<BR>There are the following variants of if statement in C language.
+<UL><LI><a href="#IF STATEMENT">If Statement</a></li><li><a href="#IF-ELSE STATEMENT">If-else Statement</a></li><li><a href="#IF-ELSE-IF LADDER STATEMENT">If-else-if Ladder Statement</a></li><li><a href="#NESTED IF-ELSE STATEMENT">Nested If-Else Statement</a></li></ul>
+<FONT SIZE="6"><B><a href="#C SWITCH CASE STATEMENT">Go to Switch Case statement</a><br><br>
+
+<FONT SIZE="5"><H1><a id="IF STATEMENT">IF STATEMENT</a></H1>
+<FONT SIZE="5"><B>The if statement is used to check some given condition and perform some operations depending upon the correctness of that condition. It is mostly used in the scenario where we need to perform the different operations for the different conditions.
+A simple program containing the if statement is given below:<BR>
+<BR><CENTER><IMG SRC="IF_STMT.JFIF" WIDTH="500" HEIGHT="350"><BR><BR></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+<FONT SIZE="5"><H1><a id="IF-ELSE STATEMENT">IF-ELSE STATEMENT</a></H1>
+<FONT SIZE="5"><B>The if-else statement is used to perform two operations for a single condition. The if-else statement is an extension to the if statement using which, we can perform two different operations, i.e., one is for the correctness of that condition, and the other is for the incorrectness of the condition. Here, we must notice that if and else block cannot be executed simiulteneously. Using if-else statement is always preferable since it always invokes an otherwise case with every if condition. <BR>
+<BR><CENTER><IMG SRC="IFELSE.JFIF" WIDTH="500" HEIGHT="350"><BR><BR></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+<FONT SIZE="5"><H1><a id="IF-ELSE-IF LADDER STATEMENT">IF-ELSE-IF LADDER STATEMENT</a></H1>
+<FONT SIZE="5"><B>The if-else-if ladder statement is an extension to the if-else statement. It is used in the scenario where there are multiple cases to be performed for different conditions. In if-else-if ladder statement, if a condition is true then the statements defined in the if block will be executed, otherwise if some other condition is true then the statements defined in the else-if block will be executed, at the last if none of the condition is true then the statements defined in the else block will be executed. There are multiple else-if blocks possible. It is similar to the switch case statement where the default is executed instead of else block if none of the cases is matched.<BR>
+<BR><CENTER><IMG SRC="IFELSEIF.PNG"  WIDTH="500" HEIGHT="350"><BR><BR></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+<FONT SIZE="5"><H1><a id="NESTED IF-ELSE STATEMENT">NESTED IF-ELSE STATEMENT</a></H1>
+<FONT SIZE="5"><B>Nested If in C Programming is placing If Statement inside another IF Statement. Nested If in C is helpful if you want to check the condition inside a condtion. If Else Statement prints different statements based on the expression result (TRUE, FALSE).<BR>
+<BR><CENTER><IMG SRC="NESTED.JFIF" WIDTH="500" HEIGHT="350"><BR><BR></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+<P ALIGN="LEFT"><FONT SIZE="8" FACE="TEMPUS SANS ITC"><H1><a id="C SWITCH CASE STATEMENT">C SWITCH CASE STATEMENT</a></H1>
+<FONT SIZE="5"><B>The switch statement in C is an alternate to if-else-if ladder statement which allows us to execute multiple operations for the different possibles values of a single variable called switch variable. Here, We can define various statements in the multiple cases for the different values of a single variable.<BR>
+The rules of a C switch case statement are given below:<br>
+<ul><li>The switch expression must be of an integer or character type.</li>
+<li>The case value must be an integer or character constant.</li>
+<li>The case value can be used only inside the switch statement.</li>
+<li>The break statement in switch case is not must. It is optional. If there is no break statement found in the case, all the cases will be executed present after the matched case. It is known as fall through the state of C switch statement</li>
+</ul></P>
+<BR><center><IMG SRC="SWITCH.PNG" WIDTH="700" HEIGHT="350"></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>

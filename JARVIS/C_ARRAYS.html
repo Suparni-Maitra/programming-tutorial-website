@@ -1,0 +1,128 @@
+<HTML>
+<TITLE>JARVIS</TITLE>
+<HEAD>
+<style>
+a:link {
+  color: BLACK;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: BLACK;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: WHITE;
+  background-color: transparent;
+  text-decoration: underline;
+}
+html {
+  background: url(PRBG3.jpg) no-repeat center fixed;
+  background-size: cover;
+  opacity:0.9;
+}
+h1 {
+  color: blue;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h2 {
+  color: WHITE;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h3 {
+  COLOR: RED;
+  text-shadow: 2px 2px BLACK;
+}
+body {
+  color: BLACK;
+}
+.button {
+  background-color: maroon; /* Green */
+  border: 6px solid yellow;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 45px;
+  margin: 15px 200px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+.button2 {border-radius: 12px;}
+.button3 {border-radius: 12px;}
+</style>
+</head>
+<BODY BGCOLOR="GREENYELLOW">
+<FONT SIZE="5" FACE="TEMPUS SANS ITC"><H1><a id="F">C ARRAYS</a></H1>
+<FONT SIZE="5"><B>An array is defined as the collection of similar type of data items stored at contiguous memory locations.
+Arrays are the derived data type in C programming language which can store the primitive type of data such as int, char, double, float, etc.
+It also has the capability to store the collection of derived data types, such as pointers, structure, etc.
+The array is the simplest data structure where each data element can be randomly accessed by using its index number.<br>
+C array is beneficial if you have to store similar elements.By using the array, we can access the elements easily.
+Only a few lines of code are required to access the elements of the array.
+<UL><LI><a href="#F1">Properties of an array</a></li>
+<li><a href="#F2">1D Array</a></li>
+<li><a href="#F3">2D Array</a></li>
+<li><a href="#F4">Passing an array to a function</a></li>
+<li><a href="#F5">Some programs on arrays</a></li>
+<br><br>
+
+<FONT SIZE="5"><H1><a id="F1">PROPERTIES OF AN ARRAY</a></H1>
+<FONT SIZE="5"><B>The various properties of a C array include:<br>
+<ul>
+		<li>Each element of an array is of same data type and carries the same size, i.e., int = 4 bytes.</li><br>
+		<li>Elements of the array are stored at contiguous memory locations where the first element is stored at the smallest memory location.</li><br>
+		<li>Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of the data element.</li><br>
+</ul>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+
+<FONT SIZE="5"><H1><a id="F2">1D ARRAY</a></H1>
+<FONT SIZE="5"><B>
+<FONT SIZE="5"><B>A One-Dimensional Array in C programming is a special type of variable that can store multiple values of only a single data type
+such as int, float, double, char, structure, pointer, etc. at a contagious location in computer memory.
+Here contagious location means at a fixed gap in computer memory.<BR>A One-Dimensional Array is also known as 1D Array.<BR><BR>
+<CENTER><IMG SRC="1DARR.JFIF" WIDTH="600" HEIGHT="350"></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+
+<FONT SIZE="5"><H1><a id="F3">2D ARRAY</a></H1>
+<FONT SIZE="5"><B>
+<FONT SIZE="5"><B>The two-dimensional array can be defined as an array of arrays. The 2D array is organized as matrices which can be represented as the collection of rows and columns.
+<BR>However, 2D arrays are created to implement a relational database lookalike data structure. It provides ease of holding the bulk of data at once which can be passed to any number of functions wherever required.
+<BR><BR>
+<CENTER><IMG SRC="2DARR.PNG" WIDTH="600" HEIGHT="350"></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+
+<FONT SIZE="5"><H1><a id="F4">PASSING AN ARRAY TO A FUNCTION</a></H1>
+<FONT SIZE="5"><B>In C, there are various general problems which requires passing more than one variable of the same type to a function.
+For example, consider a function which sorts the 10 elements in ascending order. Such a function requires 10 numbers to be passed as the actual parameters
+from the main function. Here, instead of declaring 10 different numbers and then passing into the function, we can declare and initialize an array and pass that
+into the function.
+This will resolve all the complexity since the function will now work for any number of values.<BR>
+As we know that the array_name contains the address of the first element. Here, we must notice that we need to pass only the name of the array in the function
+which is intended to accept an array. The array defined as the formal parameter will automatically refer to the array specified by the array name defined as an
+actual parameter.<BR>
+<CENTER><IMG SRC="FARRAY.JFIF" HEIGHT="350" WIDTH="550"></CENTER><FONT SIZE="5"><a href="#F">Back</a></FONT><BR>
+
+
+<FONT SIZE="5"><H1><a id="F5">SOME PROGRAMS ON ARRAYS</a></H1>
+<CENTER><IMG SRC="arr1.PNG" WIDTH="600" HEIGHT="350"></CENTER><br>
+<CENTER><IMG SRC="arr2.PNG" WIDTH="600" HEIGHT="350"></CENTER><br>
+<CENTER><IMG SRC="arr3.PNG" WIDTH="600" HEIGHT="350"></CENTER><br>
+<a href="#F">Back</a></FONT><BR>
+
+
+

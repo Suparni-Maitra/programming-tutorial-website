@@ -1,0 +1,202 @@
+<HTML>
+<TITLE>JARVIS</TITLE>
+<HEAD>
+<style>
+a:link {
+  color: BLACK;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: BLACK;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: WHITE;
+  background-color: transparent;
+  text-decoration: underline;
+}
+html {
+  background: url(PRBG3.jpg) no-repeat center fixed;
+  background-size: cover;
+  opacity:0.9;
+}
+h1 {
+  color: blue;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h2 {
+  color: black;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h3 {
+  COLOR: RED;
+  text-shadow: 2px 2px BLACK;
+}
+body {
+  color: BLACK;
+}
+.button {
+  background-color: maroon; /* Green */
+  border: 6px solid yellow;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 45px;
+  margin: 15px 200px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+.button2 {border-radius: 12px;}
+.button3 {border-radius: 12px;}
+</style>
+</head>
+<BODY BGCOLOR="GREENYELLOW">
+<FONT SIZE="5" FACE="TEMPUS SANS ITC"><H1><a id="F">C STRINGS</a></H1>
+<FONT SIZE="5"><B>The string can be defined as the one-dimensional array of characters terminated by a null ('\0'). The character array or the string is
+used to manipulate text such as word or sentences. Each character in the array occupies one byte of memory, and the last character must always be 0. The termination
+character ('\0') is important in a string since it is the only way to identify where the string ends. When we define a string as char s[10], the character s[10] is
+implicitly initialized with the null in the memory.<BR>
+
+There are two ways to declare a string in c language.<BR>
+
+1.By char array<BR>
+2.By string literal<BR>
+<UL><LI><a href="#F1">String Gets( ) and Puts( ) functions</a></li>
+<li><a href="#F2">Some main String functions</a></li>
+<li><a href="#F3">Some programs on c Strings</a></li>
+<br><br><BR>
+
+<FONT SIZE="5"><H1><a id="F1">STRING Gets( ) AND Puts( ) FUNCTIONS</a></H1>
+<FONT SIZE="5"><B>The gets() and puts() are declared in the header file stdio.h.
+Both the functions are involved in the input/output operations of the strings.<br>
+<FONT SIZE="4"><H2>Gets( ) Function</H2>
+<FONT SIZE="5">The gets() function enables the user to enter some characters followed by the enter key. All the characters entered by the user get stored in a character array.
+The null character is added to the array to make it a string.The gets() allows the user to enter the space-separated strings. It returns the string entered by the user.
+<br>
+<FONT SIZE="4"><h2>Puts( ) Function</h2>
+<FONT SIZE="5">The puts() function is very much similar to printf() function. The puts() function is used to print the string on the console which is
+previously read by using gets() or scanf() function. The puts() function returns an integer value representing the number of characters being printed on the
+console. Since, it prints an additional newline character with the string, which moves the cursor to the new line on the console, the integer value returned by
+puts() will always be equal to the number of characters present in the string plus 1.<br><br>
+<CENTER><IMG SRC="str1.jpg" WIDTH="600" HEIGHT="350"></CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+
+<FONT SIZE="5"><H1><a id="F2">SOME MAIN C STRING FUNCTIONS</a></H1>
+<FONT SIZE="5"><B>
+<table width="1000" cellpadding="10">
+<tr>
+		<td><FONT SIZE="5"><b>strlen(string_name)</td>
+		<td><FONT SIZE="5"><b>returns the length of the given string. It doesn't count null character '\0'.<br>
+		int main(){  <br>
+char ch[20]={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't', '\0'};  <br>
+   printf("Length of string is: %d",strlen(ch));    <br>
+ return 0;    <br>
+}</td>
+</tr>
+<tr>
+		<td><FONT SIZE="5"><b>strcpy(destination, source)</td>
+		<td><FONT SIZE="5"><b>The strcpy(destination, source) function copies the source string in destination.<br>
+		#include<stdio.h>  <br>
+#include <string.h>    <br>
+int main(){    <br>
+ char ch[20]={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't', '\0'};    <br>
+   char ch2[20];    <br>
+   strcpy(ch2,ch);    <br>
+   printf("Value of second string is: %s",ch2);    <br>
+ return 0;    <br>
+}   <br></td>
+</tr>
+<tr>
+		<td><FONT SIZE="5"><b>strcat(first_string, second_string)</td>
+		<td><FONT SIZE="5"><b>The strcat(first_string, second_string) function concatenates two strings and result is returned to first_string.<br>
+		int main(){    <br>
+		  char ch[10]={'h', 'e', 'l', 'l', 'o', '\0'};    <br>
+		   char ch2[10]={'c', '\0'};    <br>
+		   strcat(ch,ch2);    <br>
+		   printf("Value of first string is: %s",ch);    <br>
+		 return 0;    <br>
+}  <br>
+		</td>
+</tr>
+<tr>
+		<td><FONT SIZE="5"><b>strcmp(first_string, second_string)</td>
+		<td><FONT SIZE="5"><b>The strcmp(first_string, second_string) function compares two string and returns 0 if both strings are equal.<br>
+		int main(){    <br>
+		  char str1[20],str2[20];    <br>
+		  printf("Enter 1st string: ");<br>
+		  gets(str1);//reads string from console<br>
+		  printf("Enter 2nd string: ");    <br>
+		  gets(str2);    <br>
+		  if(strcmp(str1,str2)==0)    <br>
+		      printf("Strings are equal");    <br>
+		  else    <br>
+		      printf("Strings are not equal");    <br>
+		 return 0;    <br>
+}   <br>
+		</td>
+</tr>
+<tr>
+		<td><FONT SIZE="5"><b>strrev(string)</td>
+		<td><FONT SIZE="5"><b>The strrev(string) function returns reverse of the given string.<br>
+		int main(){    <br>
+		  char str[20];    <br>
+		  printf("Enter string: ");    <br>
+		  gets(str);//reads string from console    <br>
+		  printf("String is: %s",str);    <br>
+		  printf("\nReverse String is: %s",strrev(str));    <br>
+		 return 0;    <br>
+}  <br>
+		</td>
+</tr>
+<tr>
+		<td><FONT SIZE="5"><b>strlwr(string)</td>
+		<td><FONT SIZE="5"><b>The strlwr(string) function returns string characters in lowercase.<br>
+		int main(){    <br>
+		  char str[20];    <br>
+		  printf("Enter string: ");    <br>
+		  gets(str);//reads string from console    <br>
+		  printf("String is: %s",str);    <br>
+		  printf("\nLower String is: %s",strlwr(str));    <br>
+		 return 0;    <br>
+}  <br>
+		</td>
+</tr>
+</table>
+
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+
+<FONT SIZE="5"><H1><a id="F4">PASSING AN ARRAY TO A FUNCTION</a></H1>
+<FONT SIZE="5"><B>In C, there are various general problems which requires passing more than one variable of the same type to a function.
+For example, consider a function which sorts the 10 elements in ascending order. Such a function requires 10 numbers to be passed as the actual parameters
+from the main function. Here, instead of declaring 10 different numbers and then passing into the function, we can declare and initialize an array and pass that
+into the function.
+This will resolve all the complexity since the function will now work for any number of values.<BR>
+As we know that the array_name contains the address of the first element. Here, we must notice that we need to pass only the name of the array in the function
+which is intended to accept an array. The array defined as the formal parameter will automatically refer to the array specified by the array name defined as an
+actual parameter.<BR>
+<CENTER><IMG SRC="FARRAY.JFIF" HEIGHT="350" WIDTH="550"></CENTER><FONT SIZE="5"><a href="#F">Back</a></FONT><BR>
+
+
+<FONT SIZE="5"><H1><a id="F3">SOME PROGRAMS ON STRINGS</a></H1>
+<CENTER><IMG SRC="str2.JPG" WIDTH="600" HEIGHT="350"></CENTER><br>
+<CENTER><IMG SRC="str3.PNG" WIDTH="600" HEIGHT="350"></CENTER><br>
+<CENTER><IMG SRC="str4.PNG" WIDTH="600" HEIGHT="350"></CENTER><br>
+<a href="#F">Back</a></FONT><BR>
+
+
+

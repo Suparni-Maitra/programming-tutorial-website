@@ -1,0 +1,160 @@
+<HTML>
+<TITLE>JARVIS</TITLE>
+<HEAD>
+<style>
+a:link {
+  color: BLACK;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: BLACK;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: WHITE;
+  background-color: transparent;
+  text-decoration: underline;
+}
+html {
+  background: url(PRBG3.jpg) no-repeat center fixed;
+  background-size: cover;
+  opacity:0.9;
+}
+h1 {
+  color: blue;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h2 {
+  color: WHITE;
+  text-shadow: 1px 1px 2px yellow, 0 0 25px RED, 0 0 5px RED;
+}
+h3 {
+  COLOR: RED;
+  text-shadow: 2px 2px BLACK;
+}
+body {
+  color: BLACK;
+}
+.button {
+  background-color: maroon; /* Green */
+  border: 6px solid yellow;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 45px;
+  margin: 15px 200px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+.button2 {border-radius: 12px;}
+.button3 {border-radius: 12px;}
+</style>
+</head>
+<BODY BGCOLOR="GREENYELLOW">
+<FONT SIZE="5" FACE="TEMPUS SANS ITC"><H1><a id="F">C FUNCTIONS</a></H1>
+<FONT SIZE="5"><B>In c, we can divide a large program into the basic building blocks known as function.
+The function contains the set of programming statements enclosed by {}. A function can be called multiple times to provide reusability and modularity to the C program. In other words, we can say that the collection of functions creates a program.
+The function is also known as procedure or subroutine in other programming languages.
+<BR>There are the following types of loops and other structures in C language.
+<UL><LI><a href="#F1">Advantages of functions</a></li>
+<li><a href="#F2">Aspects of a C function</a></li>
+<li><a href="#F3">Return value</a></li>
+<li><a href="#F4">Programs on Functions</a></li>
+<li><a href="#F5">Recursion</a></li>
+<li><a href="#F6">Programs on recursion</a></li>
+<br><br>
+
+<FONT SIZE="5"><H1><a id="F1">ADVANTAGES OF FUNCTIONS</a></H1>
+<FONT SIZE="5"><B>The various advantages of functions include:
+<ul>
+		<li>By using functions, we can avoid rewriting same logic/code again and again in a program.</li><br>
+		<li>We can call C functions any number of times in a program and from any place in a program.</li><br>
+		<li>We can track a large C program easily when it is divided into multiple functions.</li><br>
+		<li>Reusability is the main achievement of C functions.</li><br>
+</ul>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+
+<FONT SIZE="5"><H1><a id="F2">ASPECTS OF A C FUNCTION</a></H1>
+<FONT SIZE="5"><B><center>
+<TABLE CELLPADDING="7" WIDTH="1000">
+<FONT SIZE="7"><TR><Th><FONT SIZE="10">ASPECT</Th><Th><FONT SIZE="10">DESCRIPTION</Th><Th><FONT SIZE="10">SYNTAX</Th></TR>
+<TR>
+	<TD><FONT SIZE="5"><b>Function Declaration</TD>
+	<TD><FONT SIZE="5"><b>A function must be declared globally in a c program to tell the compiler about the function name, function parameters, and return type.</TD>
+	<TD><FONT SIZE="5"><b>return_type function_name (argument list);</TD>
+</TR>
+<TR>
+	<TD><FONT SIZE="5"><b>Function Call</TD>
+	<TD><FONT SIZE="5"><b>Function can be called from anywhere in the program. The parameter list must not differ in function calling and function declaration.
+	We must pass the same number of functions as it is declared in the function declaration.</TD>
+	<TD><FONT SIZE="5"><b>function_name (argument_list)</TD>
+</TR>
+<TR>
+	<TD><FONT SIZE="5"><b>Function Definition</TD>
+	<TD><FONT SIZE="5"><b>It contains the actual statements which are to be executed. It is the most important aspect to which the control comes when the function is called.</TD>
+	<TD><FONT SIZE="5"><b>return_type function_name (argument list) {function body;}</TD>
+</TR>
+</table></center>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+
+<FONT SIZE="5"><H1><a id="F3">RETURN VALUE</a></H1>
+<FONT SIZE="5"><B>A C function may or may not return a value from the function.
+If we don't have to return any value from the function, we use void for the return type.<br>
+If you want to return any value from the function, you need to use any data type such as int, long, char, etc. The return type depends on the value to be returned from the function.<br>
+A function may or may not accept any argument. It may or may not return any value. Based on these facts, There are four different aspects of function calls.<br>
+<ul>
+		<li>function without arguments and without return value</li><br>
+		<li>function without arguments and with return value</li><br>
+		<li>function with arguments and without return value</li><br>
+		<li>function with arguments and with return value</li><br></UL>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+
+<FONT SIZE="5"><H1><a id="F4">PROGRAM EXAMPLES ON FUNCTIONS</a></H1>
+<FONT SIZE="5"><B><center>
+<table width="1000" >
+<tr>
+	<td><FONT SIZE="5"><b>function without arguments and without return value</td>
+	<td><img src="f1.jfif" width="500" height="300"></td>
+</tr>
+<tr>
+	<td><FONT SIZE="5"><b>function without arguments and with return value</td>
+	<td><img src="f2.jpg" width="500" height="300"></td>
+</tr>
+<tr>
+	<td><FONT SIZE="5"><b>function with arguments and without return value</td>
+	<td><img src="f3.jpg" width="500" height="300"></td>
+</tr>
+<tr>
+	<td><FONT SIZE="5"><b>function with arguments and with return value</td>
+	<td><img src="f4.jpg" width="500" height="300"></td>
+</tr>
+</TABLE>
+</CENTER>
+<FONT SIZE="5"><a href="#F">Back</a></FONT>
+
+
+<FONT SIZE="5"><H1><a id="F5">RECURSION</a></H1>
+<FONT SIZE="5"><B>Recursion is the process which comes into existence when a function calls a copy of itself to work on a smaller problem. Any function which calls itself is called recursive function, and such function calls are called recursive calls.
+Recursion involves several numbers of recursive calls.<BR>
+Generally, iterative solutions are more efficient than recursion since function call is always overhead. Any problem that can be solved recursively, can also be solved iteratively.
+However, some problems are best suited to be solved by the recursion, for example, tower of Hanoi, Fibonacci series, factorial finding, etc.<BR>
+<CENTER><IMG SRC="RECURSION.PNG" HEIGHT="350" WIDTH="550"></CENTER><FONT SIZE="5"><a href="#F">Back</a></FONT><BR>
+
+
+
